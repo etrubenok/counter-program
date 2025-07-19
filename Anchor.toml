@@ -8,6 +8,9 @@ skip-lint = false
 [programs.localnet]
 counter_program = "2ow8n54g7gu3stq9emq4Tu7ua7YjtZQ2s4X6C5QVKFgC"
 
+[programs.devnet]
+counter_program = "2ow8n54g7gu3stq9emq4Tu7ua7YjtZQ2s4X6C5QVKFgC"
+
 [registry]
 url = "https://api.apr.dev"
 
@@ -17,3 +20,7 @@ wallet = "~/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[environments.devnet]
+url = "https://api.devnet.solana.com"
+wallet = "~/.config/solana/devnet.json"
